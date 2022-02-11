@@ -17,27 +17,31 @@ namespace SnakeLadder
         public void SelectOption()
         {
             int die = 0;
-            Random random = new Random();
+
+            while (playerPosition < 100)
+            {
+                Random random = new Random();
             int option = random.Next(0, 3);
 
             die = RollaDie();
 
-            if (option == 1)
-            {
-                playerPosition = playerPosition + die;
-                Console.WriteLine("Player status is Ladder");
-                Console.WriteLine("Player position is:" + playerPosition);
-            }
-            else if (option == 2)
-            {
-                playerPosition = playerPosition - die;
-                Console.WriteLine("Player status is Snake");
-                Console.WriteLine("Player position is:" + playerPosition);
-            }
-            else
-            {
-                Console.WriteLine("Player status is No Play");
-                Console.WriteLine("Player position is:" + playerPosition);
+                if (option == 1)
+                {
+                    playerPosition = playerPosition + die;
+                    Console.WriteLine("Player status is Ladder");
+                    Console.WriteLine("Player position is:" + playerPosition);
+                }
+                else if (option == 2)
+                {
+                    playerPosition = playerPosition - die;
+                    Console.WriteLine("Player status is Snake");
+                    Console.WriteLine("Player position is:" + playerPosition);
+                }
+                else
+                {
+                    Console.WriteLine("Player status is No Play");
+                    Console.WriteLine("Player position is:" + playerPosition);
+                }
             }
         }
         public static int RollaDie()
