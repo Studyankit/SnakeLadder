@@ -27,9 +27,12 @@ namespace SnakeLadder
 
                 if (option == 1)
                 {
-                    playerPosition = playerPosition + die;
-                    Console.WriteLine("Player status is Ladder");
-                    Console.WriteLine("Player position is:" + playerPosition);
+                    if (playerPosition <= 100 && (playerPosition + die) <= 100)
+                    {
+                        playerPosition = playerPosition + die;
+                        Console.WriteLine("Player status is Ladder");
+                        Console.WriteLine("Player position is:" + playerPosition);
+                    }
                 }
                 else if (option == 2)
                 {
