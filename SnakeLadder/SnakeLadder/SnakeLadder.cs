@@ -14,7 +14,12 @@ namespace SnakeLadder
         {
             Console.WriteLine("Starting position is:" + startPosition);
         }
-
+        public void RollaDie()
+        {
+            Random random = new Random();
+            int die = random.Next(1,7);
+            Console.WriteLine(die);
+        }
     }
 }
 
