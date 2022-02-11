@@ -8,7 +8,7 @@ namespace SnakeLadderSimulation
         static void Main(string[] args)
         {
             SnakeLadder.SnakeLadderSimulator simulator = new SnakeLadder.SnakeLadderSimulator();
-            simulator.RollaDie();
+            simulator.SelectOption();
             
         }
     }
