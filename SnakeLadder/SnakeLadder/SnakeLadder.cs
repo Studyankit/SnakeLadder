@@ -8,10 +8,13 @@ namespace SnakeLadder
 {
     class SnakeLadderSimulator
     {
-       public static void main(Strig[] args)
+            int startPosition = 0;
+       
+        public void start()
         {
-            Console.WriteLine("Welcome to snake and ladder simulator");
+            Console.WriteLine("Starting position is:" + startPosition);
         }
+
     }
 }
 
