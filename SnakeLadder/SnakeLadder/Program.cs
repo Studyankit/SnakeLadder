@@ -1,15 +1,13 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using System;
 
-namespace SnakeLadderSimulation
+namespace SnakeLadder
 {
     class Program
     {
         static void Main(string[] args)
         {
-            SnakeLadder.SnakeLadderSimulator simulator = new SnakeLadder.SnakeLadderSimulator();
-            simulator.SelectOption();
-            
+            SnakeLadderSimulator.selectOption();
         }
     }
 }
